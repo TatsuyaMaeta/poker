@@ -1,0 +1,12 @@
+/Users/git-repo/poker/poker/bin/Debug/netcoreapp3.1/poker.deps.json
+/Users/git-repo/poker/poker/bin/Debug/netcoreapp3.1/poker.runtimeconfig.json
+/Users/git-repo/poker/poker/bin/Debug/netcoreapp3.1/poker.runtimeconfig.dev.json
+/Users/git-repo/poker/poker/bin/Debug/netcoreapp3.1/poker.dll
+/Users/git-repo/poker/poker/bin/Debug/netcoreapp3.1/poker.pdb
+/Users/git-repo/poker/poker/obj/Debug/netcoreapp3.1/poker.csprojAssemblyReference.cache
+/Users/git-repo/poker/poker/obj/Debug/netcoreapp3.1/poker.AssemblyInfoInputs.cache
+/Users/git-repo/poker/poker/obj/Debug/netcoreapp3.1/poker.AssemblyInfo.cs
+/Users/git-repo/poker/poker/obj/Debug/netcoreapp3.1/poker.csproj.CoreCompileInputs.cache
+/Users/git-repo/poker/poker/obj/Debug/netcoreapp3.1/poker.dll
+/Users/git-repo/poker/poker/obj/Debug/netcoreapp3.1/poker.pdb
+/Users/git-repo/poker/poker/obj/Debug/netcoreapp3.1/poker.genruntimeconfig.cache
