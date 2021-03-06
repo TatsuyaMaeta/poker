@@ -44,18 +44,14 @@ namespace poker
             //List <Dictionary<string, int>> checkMaxDuplicate = CheckMaxDuplicate(handsNumber);
             int MaxDuplicate = 0;
 
-            Console.WriteLine( checkMaxDuplicate.Max());
-            foreach (var item in checkMaxDuplicate)
-            {
-               
+            Console.WriteLine("List Keys = "+ checkMaxDuplicate[0].Keys);
+            //for (int i = 0; i < checkMaxDuplicate.Count; i++)
+            //{
+            //    int i = checkMaxDuplicate[i].Keys;
                 
-                Console.WriteLine(item.Values);
-                Console.WriteLine(item.GetType());
-                //if (MaxDuplicate < item.Values)
-                //{
+            //}
 
-                //}
-            }
+            
             //checkMaxDuplicateのcountが2の場合valueを比較して手札の役を判定
             //最大値:2 => IsTwoPair || 最大値:3 => FullHouse 
 

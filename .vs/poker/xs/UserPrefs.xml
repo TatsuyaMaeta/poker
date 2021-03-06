@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{4E018909-718C-4008-B32E-435D2214B305}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="poker/CheckRole.cs">
+    <Files>
+      <File FileName="poker/Program.cs" Line="226" Column="49" />
+      <File FileName="poker/CheckRole.cs" Line="50" Column="49" />
+      <File FileName="poker/DealCards.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="poker" expanded="True">
+            <Node name="poker" expanded="True">
+              <Node name="CheckRole.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.poker PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/git-repo/poker/poker/Program.cs" relfile="poker/Program.cs" line="232" column="1" />
+      <Breakpoint file="/Users/git-repo/poker/poker/CheckRole.cs" relfile="poker/CheckRole.cs" line="70" column="1" />
+      <Breakpoint file="/Users/git-repo/poker/poker/CheckRole.cs" relfile="poker/CheckRole.cs" line="56" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
