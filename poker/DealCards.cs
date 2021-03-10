@@ -46,17 +46,12 @@ namespace poker
             //1~13, 14~26, 27~39, 40~52
 
             //デバッグ用
-            int num = 11;
-            HandsCardList[0] = num;
-            HandsCardList[1] = num + 13;
-            HandsCardList[2] = num + 13 * 2;
-            HandsCardList[3] = 3;
-            HandsCardList[4] = 16;
-
-
-
-
-
+            //int num = 11;
+            //HandsCardList[0] = num;
+            //HandsCardList[1] = num + 13;
+            //HandsCardList[2] = num + 13 * 2;
+            //HandsCardList[3] = 3;
+            //HandsCardList[4] = 16;
 
 
 

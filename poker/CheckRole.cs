@@ -18,8 +18,7 @@ namespace poker
             List<int> handsID = new List<int>();
             List<int> handsMark = new List<int>();
             List<int> handsNumber = new List<int>();
-            List<string> handsNumberAlph = new List<string>();
-
+            
             int resultHandsRole = 0;
 
             for (int i = 0; i < MAXHANDSCARDS; i++)
@@ -27,13 +26,13 @@ namespace poker
                 handsID.Add(handsCardArray[i, 0]);
                 handsMark.Add(handsCardArray[i, 1]);
                 handsNumber.Add(handsCardArray[i, 2]);
-                handsNumberAlph.Add(baseCardsArray[handsCardArray[i, 2] - 1]);
+                
             }
             handsID.Sort();
             handsMark.Sort();
             handsNumber.Sort();
 
-
+            //ユニークとなっているマークとナンバーの数が入っているDictionary
             Dictionary<string, int> DictHandMatch = new Dictionary<string, int>
             {
                 {"MatchMark", handsMark.Distinct().Count()} ,
@@ -44,31 +43,28 @@ namespace poker
             //List <Dictionary<string, int>> checkMaxDuplicate = CheckMaxDuplicate(handsNumber);
             int MaxDuplicate = 0;
 
-            Console.WriteLine("List Keys = "+ checkMaxDuplicate[0].Keys);
-            //for (int i = 0; i < checkMaxDuplicate.Count; i++)
-            //{
-            //    int i = checkMaxDuplicate[i].Keys;
-                
-            //}
 
-            
             //checkMaxDuplicateのcountが2の場合valueを比較して手札の役を判定
             //最大値:2 => IsTwoPair || 最大値:3 => FullHouse 
 
             resultHandsRole = 1;
 
+            int numOne = checkMaxDuplicate[0]["3"];
+            int numTwo = checkMaxDuplicate[1]["11"];
 
+            //resultHandsRole = IsStrait(handsNumber, asterFlg);
+            //resultHandsRole = IsStraitFlush(handsNumber, handsMark, asterFlg);
 
-
-            resultHandsRole = IsStrait(handsNumber, asterFlg);
-            resultHandsRole = IsStraitFlush(handsNumber, handsMark, asterFlg);
+            //DictHandMatch[MatchMark]
             // 1... flush,  StraitFlush,RoyalStraitFlushの可能性あり
             // 2... flush,  StraitFlush,RoyalStraitFlushの可能性あり(joker)
 
+            //DictHandMatch[MatchNumber]
             // 2... FullHouse, FourCard, FiveCard(joker)
             // 3... ThreeCard, TwoPair, FullHouse(joker)
             // 4... OnePair, ThreeCard(joker)
             // 5... NoPair, OnePair(joker)  || Strait, StraitFlush, RoyalStraitFlushの可能性あり
+
 
             if (DictHandMatch["MatchMark"] == 1)
             {
@@ -78,13 +74,16 @@ namespace poker
             }
             else if(DictHandMatch["MatchNumer"] == 2)
             {
-                if (true)
+                if (asterFlg)
                 {
-
+                    //resultHandsRole = IsFiveCard
                 }
-                //resultHandsRole = IsFullHouse
-                //resultHandsRole = IsFourCard
-                //resultHandsRole = IsFiveCard
+                else
+                {
+                    //resultHandsRole = IsFullHouse
+                    //resultHandsRole = IsFourCard
+                }
+
             }
             else if (DictHandMatch["MatchNumer"] == 3)
             {
@@ -100,28 +99,6 @@ namespace poker
                 resultHandsRole = IsOnePair(handsNumber, asterFlg);
                 resultHandsRole = IsNoPair(handsID, handsMark, handsNumber, asterFlg);
             }
-
-            //int role_point = (asterFlg, DictHandMatch["MatchMark"], DictHandMatch["MatchNumer"]) switch
-            //{
-            //    //ジョーカーあり
-            //    (true, _, 1) => 1,
-            //    (true, _, 2) => 3,
-            //    (true, _, 3) => 4,
-
-            //    //ジョーカーなしのツーペア
-            //    (false, true, _) => 2,
-
-            //    //ジョーカーなしの各手札組み合わせ(ツーペア以外)
-            //    (false, false, 1) => 0,
-            //    (false, false, 2) => 1,
-            //    (false, false, 3) => 3,
-            //    (false, false, 4) => 4,
-
-            //    //明示的破棄
-            //    _ => throw new NotImplementedException(),
-            //};
-
-
 
 
 
